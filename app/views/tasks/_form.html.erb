@@ -21,7 +21,10 @@
   </div>
   <div class="field">
     <%= f.label :name ,"予定" %><br>
-    <%= f.text_field :name, style: "ime-mode: active;" %>
+
+    <%= f.text_field :name,   maxlength: 15 , style: "ime-mode: active;" %>
+
+
   </div>
   <div class="field">
     <%= f.label :done ,"完了" %><br>
